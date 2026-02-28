@@ -6,11 +6,11 @@ import { Search } from 'lucide-react';
 import { redirect } from 'next/navigation';
 import { AnimatedList } from '@/components/animated-list';
 import { PageTransition } from '@/components/page-transition';
-import dynamic from 'next/dynamic';
+import nextDynamic from 'next/dynamic';
 
 // Dynamically import MapComponent to disable Server-Side Rendering
 // because Leaflet accesses the window object
-const MapComponent = dynamic(() => import('@/components/map'), {
+const MapComponent = nextDynamic(() => import('@/components/map'), {
     ssr: false,
     loading: () => (
         <div className="flex h-full w-full items-center justify-center bg-zinc-100 dark:bg-zinc-900">
