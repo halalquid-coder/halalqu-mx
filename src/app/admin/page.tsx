@@ -4,6 +4,8 @@ import { approveRestaurantAction, rejectRestaurantAction } from './actions';
 import { HalalBadge } from '@/components/shared/halal-badge';
 import { MapPin } from 'lucide-react';
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminPanelPage() {
     // TODO: Add Auth check to ensure user is ADMIN
 
