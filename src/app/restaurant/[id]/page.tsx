@@ -5,6 +5,8 @@ import { HalalBadge } from '@/components/shared/halal-badge';
 import { MapPin, Utensils, Calendar, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+export const dynamic = "force-dynamic";
+
 export default async function RestaurantDetailPage({
     params,
 }: {
