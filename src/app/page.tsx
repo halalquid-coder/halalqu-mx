@@ -5,6 +5,8 @@ import { RestaurantCard } from '@/components/shared/restaurant-card';
 import prisma from '@/lib/prisma';
 import { PageTransition } from '@/components/page-transition';
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   // Fetch top rated/most reviewed restaurants for the landing page
   const featuredRestaurants = await prisma.restaurant.findMany({

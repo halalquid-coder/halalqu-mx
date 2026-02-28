@@ -24,6 +24,8 @@ const MapComponent = dynamic(() => import('@/components/map'), {
 
 import { Map } from 'lucide-react';
 
+export const dynamic = "force-dynamic";
+
 export default async function ExplorePage({
     searchParams,
 }: {
@@ -84,8 +86,8 @@ export default async function ExplorePage({
                                             <label
                                                 key={cat.label}
                                                 className={`cursor-pointer px-4 py-2 rounded-full border text-sm font-medium transition-colors ${category === cat.value
-                                                        ? 'bg-emerald-600 text-white border-emerald-600'
-                                                        : 'bg-zinc-100 dark:bg-zinc-800 text-foreground hover:bg-emerald-50 dark:hover:bg-emerald-900/30'
+                                                    ? 'bg-emerald-600 text-white border-emerald-600'
+                                                    : 'bg-zinc-100 dark:bg-zinc-800 text-foreground hover:bg-emerald-50 dark:hover:bg-emerald-900/30'
                                                     }`}
                                             >
                                                 <input
