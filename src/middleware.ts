@@ -39,6 +39,7 @@ export default withAuth(
                 return true;
             },
         },
+        secret: process.env.NEXTAUTH_SECRET || "halalqu-super-secret-key-for-mvp-12345",
     }
 );
 
