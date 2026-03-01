@@ -2,6 +2,8 @@ import prisma from '@/lib/prisma';
 import { Button } from '@/components/ui/button';
 import { RestaurantCard } from '@/components/shared/restaurant-card';
 
+export const dynamic = "force-dynamic";
+
 export default async function ProfilePage() {
     // TODO: Add proper Auth using NextAuth
     // For MVP, using the seeded admin user
