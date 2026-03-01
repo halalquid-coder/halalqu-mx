@@ -4,6 +4,8 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { submitPlaceAction } from './actions';
 
+export const dynamic = "force-dynamic";
+
 export default function SubmitPage() {
     return (
         <div className="container mx-auto px-4 py-12 max-w-2xl">
